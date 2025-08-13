@@ -1,34 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app">
+      <section className="hero">
+        <h1>OnTopic Health</h1>
+        <p className="tagline">Know Your Light</p>
+        <p className="subtitle">Clarity in exposure. Balance in life.</p>
+      </section>
+
+      <section className="mission">
+        <h2>Reimagining Health Through Light</h2>
+        <p>We're developing technology that makes the invisible visible—revealing how light shapes every aspect of your wellbeing.</p>
+      </section>
+
+      <section className="product">
+        <h2>Introducing Glow</h2>
+        <p>The first wearable designed specifically to quantify and optimize your light exposure.</p>
+        <a href="https://preorder.ontopic.health" className="cta-button">Pre-order Now</a>
+      </section>
+
+      <footer className="footer">
+        <p>&copy; 2024 OnTopic Health</p>
+        <p>hello@ontopic.health</p>
+      </footer>
+    </div>
   )
 }
 
